@@ -1,0 +1,47 @@
+.span{
+   display: inline-block;
+}
+
+.center{
+   justify-content: center;
+    position: relative;
+}
+.logo{
+   display: flex;
+   flex: 100%;
+   flex-wrap: nowrap;
+   max-width: none;
+}
+
+@media(max-width:fullscreen){
+   .navlink,.logo{
+      flex-direction: row;
+   }
+   
+}
+@media(min-width: 1px){
+.game{
+flex-direction: column;
+   }
+}
+.game{
+   flex: 20%;
+   flex-wrap: nowrap;
+   justify-content: left;
+   padding: 1em;
+   min-height: 5em;
+   border: 3px solid;
+   max-width: 100px;
+}
+
+.navlink{
+   flex: 40%;
+   text-align: left;
+   flex-wrap: wrap;
+   
+}
+
+.yes{
+   flex-wrap: wrap;
+justify-content: right;
+}
